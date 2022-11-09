@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Crud Web Application">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Miracle Marcel">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Web Application</title>
+    <!------style sheet-------->
+    <link rel="stylesheet" href="style.css">
+
+    <!------ICONSKOUT ICONS-------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!------MATERIALS ICONS CDN-->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />    
+
+    <!-----FONT AWESOME ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!------------Google fonts --montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="/index.html" class="nav__logo">CRUD</a>
+            <ul class="nav__items">
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--<li><a href="./signin.html">Sign In</a></li>-->
+                <li class="nav__profile">
+                    <div class="avatar"> 
+                        <img src="/images/user-2.png">
+                    </div>
+                    <ul>
+                        <li><a href="/dashboard.html">Dashboard</a></li>
+                        <li><a href="/logout.html">logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!---------small phones menu icons----->
+            <button id="menu-btn"><span class="material-symbols-sharp">menu</span></button>
+            <button id="close-btn"><span class="material-symbols-sharp">close</span></button>
+        </div>
+    </nav>
+
+
+    <section class="dashboard">
+        <div class="container dashboard__container">
+            <buttuon id="show__sidebar-btn" class="sidebar__toggle"><i class="uil uil-angle-right-b"></i></buttuon>
+            <buttuon id="hide__sidebar-btn" class="sidebar__toggle"><i class="uil uil-angle-left-b"></i></buttuon>
+            <aside>
+                <ul>
+                    <li><a href="add-post.html"><i class="uil uil-pen"></i>
+                        <h5>Add Post</h5>
+                    </a></li>
+                    <li><a href="dashboard.html"><i class="uil uil-postcard"></i>
+                        <h5>Manage Post</h5>
+                    </a></li>
+                    <li><a href="add-user.html"><i class="uil uil-user-plus"></i>
+                        <h5>Add User</h5>
+                    </a></li>
+                    <li><a href="manage-users.html" class="active"><i class="uil uil-users-alt"></i>
+                        <h5>Manage Users</h5>
+                    </a></li>
+                    <li><a href="add-category.html"><i class="uil uil-edit"></i>
+                        <h5>Add Category</h5>
+                    </a></li>
+                    <li><a href="manage-categories.html"><i class="uil uil-list-ul"></i>
+                        <h5>Manage Categories</h5>
+                    </a></li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Manage Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                            <th>Admin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Miracle Marcel</td>
+                            <td>Marcellush23</td>
+                            <td><a href="/edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="/delete-category.html" class="btn sm danger">Delete</a></td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Angelica Mie</td>
+                            <td>Angelica2</td>
+                            <td><a href="/edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="/delete-category.html" class="btn sm danger">Delete</a></td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Johnson Chidi</td>
+                            <td>Johnson76</td>
+                            <td><a href="/edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="/delete-category.html" class="btn sm danger">Delete</a></td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer__socials">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="/category-post.html">Real Estate</a></li>
+                    <li><a href="#/category-post.html">Fashion</a></li>
+                    <li><a href="/category-post.html">Wild Life</a></li>
+                    <li><a href="/category-post.html">Travels</a></li>
+                    <li><a href="/category-post.html">Sports</a></li>
+                    <li><a href="/category-post.html">Art</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Online Support</h4>
+                <ul>
+                    <li><a href="#">Real Estate</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Wild Life</a></li>
+                    <li><a href="#">Travels</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Art</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="#">Real Estate</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Wild Life</a></li>
+                    <li><a href="#">Travels</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Art</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; 2022|  Miracle Marcel | All Rights Reserved</small>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="./main.js"></script>
+    
+    </body>
+    </html>
